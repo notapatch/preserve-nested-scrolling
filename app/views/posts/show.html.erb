@@ -2,6 +2,21 @@
 
 <%= render @post %>
 
+<% 1.upto(0).each do |index| %>
+  <p><%= index %></p>
+<% end %>
+
+<div style="overflow: auto; height: 200px;">
+  <% @posts.each do |post|   %>
+    <%= link_to post.title, post %>
+    <br/>
+  <% end %>
+</div>
+
+<br/>
+<br/>
+
+
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
   <%= link_to "Back to posts", posts_path %>
