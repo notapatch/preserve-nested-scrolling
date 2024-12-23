@@ -9,6 +9,19 @@
     <%= render post %>
     <p>
       <%= link_to "Show this post", post %>
+      <%= button_to "Delete", post, method: :delete %>
+    </p>
+  <% end %>
+</div>
+
+<h1>Posts in overflow scroll</h1>
+
+<div style="overflow: auto; height: 200px;">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+      <%= button_to "Delete", post, method: :delete %>
     </p>
   <% end %>
 </div>
