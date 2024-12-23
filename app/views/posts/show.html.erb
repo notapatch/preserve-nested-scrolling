@@ -2,9 +2,19 @@
 
 <%= render @post %>
 
+<h1>Show: Something to move down page</h1>
+
 <% 1.upto(0).each do |index| %>
   <p><%= index %></p>
 <% end %>
+
+<h1>Nested Div array</h1>
+<div id="unique-id" style="overflow: auto; height: 200px; border: 1px solid black;">
+  <% @posts.each do |post|   %>
+    <%= link_to post.title, post %>
+    <br/>
+  <% end %>
+</div>
 
 <br/>
 <br/>
