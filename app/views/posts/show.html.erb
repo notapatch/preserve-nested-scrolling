@@ -2,6 +2,14 @@
 
 <%= render @post %>
 
+<% 1.upto(0).each do |index| %>
+  <p><%= index %></p>
+<% end %>
+
+<br/>
+<br/>
+
+
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
   <%= link_to "Back to posts", posts_path %>
