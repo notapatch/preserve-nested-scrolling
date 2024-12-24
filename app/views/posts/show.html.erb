@@ -8,8 +8,8 @@
   <p><%= index %></p>
 <% end %>
 
-<h1>Nested Div array</h1>
-<div id="unique-id" style="overflow: auto; height: 200px; border: 1px solid black;">
+<h1>data-preserve-scroll</h1>
+<div id="unique-id" data-preserve-scroll style="overflow: auto; height: 200px; border: 1px solid black;">
   <% @posts.each do |post|   %>
     <%= link_to post.title, post %>
     <br/>
