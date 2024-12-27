@@ -7,18 +7,20 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
-
-* Configuration
+3.3.5
 
 * Database creation
 
-* Database initialization
+SQLite3
 
-* How to run the test suite
+* Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+rails db:reset
 
-* Deployment instructions
+* About
 
-* ...
+Comparing two ways to handle preservation of nested scrolling
+
+- Morphing is added but not involved in the demo
+
+- Demo is on only show page
